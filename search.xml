@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>md的基础语法</title>
+    <url>/post/2024/03/16/markdown/</url>
+    <content><![CDATA[<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section"># 一级标题</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">## 二级标题</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">### 三级标题</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">#### 四级标题</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">##### 五级标题</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">###### 六级标题</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>加粗文字</strong></p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="strong">**加粗文字**</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><em>斜体文字</em></p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="emphasis">*斜体文字*</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><del>删除线</del></p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">~~删除线~~</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><code>行内代码</code></p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">`行内代码`</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<ul>
+<li>无序列表项1</li>
+<li>无序列表项2</li>
+<li>无序列表项3<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> 无序列表项1</span><br><span class="line"><span class="bullet">-</span> 无序列表项2</span><br><span class="line"><span class="bullet">-</span> 无序列表项3</span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<ol>
+<li>有序列表项1</li>
+<li>有序列表项2</li>
+<li>有序列表项3<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">1.</span> 有序列表项1</span><br><span class="line"><span class="bullet">2.</span> 有序列表项2</span><br><span class="line"><span class="bullet">3.</span> 有序列表项3</span><br></pre></td></tr></table></figure></li>
+</ol>
+<hr>
+<p><a href="https://api-pikilap.pages.dev/image/img/du4g6s7ftoygsg86djjrlp9c7m3ijj7y9y4rk80f7f1c3yzfcwuclb8i5kx1g5f1oxd6to352x8couviep8jzvgdluabd7wi21ca3h2hmrbz8ym7vi4vcbozgjaiw5mh.png">链接文本</a></p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">[<span class="string">链接文本</span>](<span class="link">链接地址</span>)</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><img src="https://api-pikilap.pages.dev/image/img/du4g6s7ftoygsg86djjrlp9c7m3ijj7y9y4rk80f7f1c3yzfcwuclb8i5kx1g5f1oxd6to352x8couviep8jzvgdluabd7wi21ca3h2hmrbz8ym7vi4vcbozgjaiw5mh.png" alt="图片替代文字" loading="lazy" onerror='this.onerror=null;this.src="/img/404.jpg"'></p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">![<span class="string">图片替代文字</span>](<span class="link">图片链接地址</span>)</span><br></pre></td></tr></table></figure>
+
+<hr>
+<blockquote>
+<p>引用内容</p>
+</blockquote>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="quote">&gt; 引用内容</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;Hello World&quot;</span>);</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="code">```javascript</span></span><br><span class="line"><span class="code">console.log(&quot;Hello World&quot;);</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line">&lt;!-- 这是注释 --&gt;</span><br><span class="line">```markdown</span><br><span class="line">&lt;!-- 这是注释 --&gt;</span><br></pre></td></tr></table></figure>
+
+<hr>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 已完成任务</li>
+<li><input disabled="" type="checkbox"> 未完成任务<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">-</span> [x] 已完成任务</span><br><span class="line"><span class="bullet">-</span> [ ] 未完成任务</span><br></pre></td></tr></table></figure></li>
+</ul>
+<hr>
+<p>*转义后的星号*</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line">\<span class="emphasis">*转义后的星号\*</span></span><br></pre></td></tr></table></figure>
+
+<hr>
+<h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a><a href="#%E9%94%9A%E7%82%B9">标题</a></h3><figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="section">### [<span class="string">标题</span>](<span class="link">#锚点</span>)</span></span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>大浪滔天</title>
+    <url>/post/2024/03/16/%E5%A4%A7%E6%B5%AA%E6%BB%94%E5%A4%A9/</url>
+    <content><![CDATA[<h2 id="大浪滔天"><a href="#大浪滔天" class="headerlink" title="大浪滔天"></a>大浪滔天</h2><blockquote>
+<p>水遁•大浪滔天</p>
+</blockquote>
+<hr>
+<p><strong>海水倾西乱滔天，大浪惊起尽可怜。<br>  莫言令己身道亡，惟愿荆棘驻万年。</strong></p>
+<hr>
+]]></content>
+      <categories>
+        <category>诗词</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>剑破长空</title>
+    <url>/post/2024/03/16/%E5%89%91%E7%A0%B4%E9%95%BF%E7%A9%BA/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>诗词</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>博客相关</title>
+    <url>/post/2024/03/16/%E5%8D%9A%E5%AE%A2%E7%9B%B8%E5%85%B3%E5%85%AC%E5%91%8A/</url>
+    <content><![CDATA[<h3 id="欢迎"><a href="#欢迎" class="headerlink" title="欢迎"></a><a href="#%E6%AC%A2%E8%BF%8E">欢迎</a></h3><p><strong>这是我的第一个博客</strong></p>
+<hr>
+<h3 id="关于"><a href="#关于" class="headerlink" title="关于"></a><a href="#%E5%85%B3%E4%BA%8E">关于</a></h3><h4 id="依赖"><a href="#依赖" class="headerlink" title="依赖"></a>依赖</h4><ul>
+<li>基于async主题</li>
+<li>托管于Github、Cloudflare</li>
+<li>其余均为原创</li>
+</ul>
+<h4 id="联系"><a href="#联系" class="headerlink" title="联系"></a>联系</h4><ul>
+<li>QQ ： 1412219758</li>
+<li>Telegram ： <a href="https://t.me/snxdm">@snxdm</a></li>
+<li>Github ： <a href="https://github.com/pikilap">Pikilap</a></li>
+</ul>
+<h4 id="评论"><a href="#评论" class="headerlink" title="评论"></a>评论</h4><ul>
+<li>需要登录<a href="https://github.com/">Github</a>账号</li>
+<li>基于Github Discussions</li>
+<li>基于Giscus</li>
+<li>请注意您的言辞</li>
+</ul>
+<h4 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h4><ul>
+<li>访问速度些许下降</li>
+</ul>
+]]></content>
+      <categories>
+        <category>公告</category>
+      </categories>
+  </entry>
+</search>
