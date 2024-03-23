@@ -136,4 +136,36 @@
         <category>公告</category>
       </categories>
   </entry>
+  <entry>
+    <title>Git 上传</title>
+    <url>/post/2024/03/23/Git-%E4%B8%8A%E4%BC%A0/</url>
+    <content><![CDATA[<p>在开发过程中，将文件上传到 GitHub 存储库是一个常见的操作。<br>那么这个教程随之而来。</p>
+<h2 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h2><ol>
+<li><p><strong>确保安装 Git</strong><br>如果尚未安装 Git，请前往 <a href="https://git-scm.com/downloads">Git 官网</a> 下载并安装适合你操作系统的版本。</p>
+</li>
+<li><p><strong>初始化 Git 存储库</strong><br>打开终端或命令行，并进入到要上传的文件所在的目录。然后执行以下命令，将当前目录初始化为一个 Git 存储库：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git init</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>将文件添加到暂存区</strong><br>执行以下命令，将当前目录下的所有文件添加到 Git 的暂存区：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git add .</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>提交更改到本地存储库</strong><br>使用以下命令提交暂存区中的文件到本地 Git 存储库，并附上一条描述这次提交的有意义消息：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git commit -m <span class="string">&quot;提交描述&quot;</span></span><br></pre></td></tr></table></figure>
+<p>替换 “提交描述” 为描述这次提交的消息。</p>
+</li>
+<li><p><strong>关联远程存储库</strong><br>添加远程存储库的 URL 到本地 Git 仓库，这样 Git 就知道要将更改推送到哪个远程存储库：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git remote add origin https://github.com/&lt;user-name&gt;/&lt;repositories&gt;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><strong>推送到远程存储库</strong><br>将本地分支推送到远程存储库。如果是首次推送，需要使用 <code>-u</code> 参数建立起本地分支与远程分支的关联：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git push -u origin &lt;branch&gt;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p>  <strong>若提示origin重复</strong><br>   执行以下命令<br>   <figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">git remote remove origin</span><br></pre></td></tr></table></figure></p>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
+<li>确保在执行这些指令前已经配置好了 Git，并且已经登录到 GitHub 账户。</li>
+<li>替换命令中的 URL 和分支名称为你要上传的远程存储库的 URL 和分支名称。</li>
+<li>在提交描述时，尽量使用有意义的描述信息，以便其他开发者了解你所做的更改。</li>
+</ul>
+<p>通过遵循以上步骤，你就可以将当前目录下的所有文件上传或替换到指定的 GitHub 存储库中了。</p>
+]]></content>
+  </entry>
 </search>
