@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>image</title>
+</head>
+<body>
+<p>Please wait...</p>
+<div id="error-message" style="display: none; color: red; font-weight: bold;"></div>
+<script>
+const params = new URLSearchParams(window.location.search);
+const type = params.get("type");
+const link = params.get("link") || "cloudflare";
+
+const apiUrl = {
+  "avatar": {
+    "cloudflare": "https://storage.pikilap.pages.dev/api/image/avatar/avatar.json"
+  },
+  "anime": {
+    'cloudflare': "https://storage.pikilap.pages.dev/api/image/anime/anime.json"
+  },
+  "wallpaper": {
+    'cloudflare': "https://storage.pikilap.pages.dev/api/image/wallpaper/wallpaper.json"
+  }
+};
+
+const isValidType = apiUrl.hasOwnProperty(type);
+const isValidLink = isValidType && apiUrl[type].hasOwnProperty(link);
+
+if (isValidLink) {
+  fetch(apiUrl[type][link])
+    .then(response => response.json())
+    .then(data => {
+      const randomIndex = Math.floor(Math.random() * data.length);
+      const imageName = data[randomIndex];
+      const baseUrl = "https://storage.pikilap.pages.dev";
+      const imageUrl = baseUrl + "/api/image/" + type + "/" + imageName;
+      window.location.replace(imageUrl);
+    })
+    .catch(error => {
+      const errorMessage = 'Error fetching: ' + error;
+      document.getElementById("error-message").textContent = errorMessage;
+      document.getElementById("error-message").style.display = "block";
+    });
+} else {
+  const errorMessage = 'Invalid type or link parameter.';
+  document.getElementById("error-message").textContent = errorMessage;
+  document.getElementById("error-message").style.display = 'block';
+}
+</script>
+</body>
+</html>
