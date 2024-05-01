@@ -1,3 +1,3 @@
-var posts=["2024/clvmyacci0000y0s662387gch"];function toRandomPost(){
+var posts=["2024/clvn7utnj00007js6ht9gcw3f"];function toRandomPost(){
     pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);
   };
