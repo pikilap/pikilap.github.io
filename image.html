@@ -15,13 +15,13 @@ const link = params.get("link") || "cloudflare";
 
 const apiUrl = {
   "avatar": {
-    "cloudflare": "https://storage.pikilap.pages.dev/api/image/avatar/avatar.json"
+    "cloudflare": "https://storage.ify.pages.dev/api/image/avatar/avatar.json"
   },
   "anime": {
-    'cloudflare': "https://storage.pikilap.pages.dev/api/image/anime/anime.json"
+    'cloudflare': "https://storage.ify.pages.dev/api/image/anime/anime.json"
   },
   "wallpaper": {
-    'cloudflare': "https://storage.pikilap.pages.dev/api/image/wallpaper/wallpaper.json"
+    'cloudflare': "https://storage.ify.pages.dev/api/image/wallpaper/wallpaper.json"
   }
 };
 
@@ -34,7 +34,7 @@ if (isValidLink) {
     .then(data => {
       const randomIndex = Math.floor(Math.random() * data.length);
       const imageName = data[randomIndex];
-      const baseUrl = "https://storage.pikilap.pages.dev";
+      const baseUrl = "https://storage.ify.pages.dev";
       const imageUrl = baseUrl + "/api/image/" + type + "/" + imageName;
       window.location.replace(imageUrl);
     })
