@@ -4,5 +4,11 @@
     "container": [
       { "icon": "<img src=\"https://blog.ify.pages.dev/img/emoji/bilibili/doge.png\">", "text": "tv_doge" }
     ]
+  },
+  "Heo": {
+    "type": "image",
+    "container": [
+      { "icon": "<img src='https://blog.ify.pages.dev/img/emoji/heo/3d眼镜.webp'>", "text": "3d眼镜" }
+    ]
   }
 }
