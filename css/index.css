@@ -1,3 +1,5 @@
+@import url('https://blog.ify.pages.dev/css/fonts.css');
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 html {
   line-height: 1.15;
@@ -36,6 +38,8 @@ body {
   padding: 0;
   overflow-x: clip;
   overscroll-behavior: none;
+  font-family: 'LXGWWenKai-Medium';
+  
 }
 
 main {
